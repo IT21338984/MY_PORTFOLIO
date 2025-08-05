@@ -554,7 +554,8 @@
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
+  margin-top: -0.3cm;
 }
 
 /* Two rows: top (email/phone), bottom (socials) */
@@ -564,6 +565,7 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2rem;
+  width: 110%;
 }
 
 /* Card style for each contact method */
@@ -603,7 +605,6 @@
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
-
 .contact-icon:hover {
   transform: scale(1.1) rotate(10deg);
 }
@@ -1035,13 +1036,13 @@
 </div>
 
       <!-- Top row: Email + Phone -->
-      <div class="contact-info contact-top">
-        <div class="contact-item">
-          <div class="contact-icon">📧</div>
+      <div class="contact-info contact-top contact-email">
+        <div class="contact-item ">
+          <div class="contact-icon ">📧</div>
           <p>info.aialfa@gmail.com</p>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">📱</div>
+        <div class="contact-item contact-mobile">
+          <div class="contact-icon ">📱</div>
           <p>+94 76 6540 946</p>
         </div>
       </div>
