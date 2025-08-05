@@ -14,6 +14,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <style>
       * {
         margin: 0;
@@ -594,6 +596,18 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+.contact-top .contact-item {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 0.9cm;
+}
+
+.contact-bottom .contact-item {
+  transform: translateX(-0.45cm);
+  margin-bottom: 1.5rem;
+}
+
+
 /* Hover effect */
 .contact-item:hover {
   transform: translateY(-5px);
@@ -617,9 +631,14 @@
   transform: scale(1.1) rotate(10deg);
 }
 
+.contact-icon i {
+  font-size: 1.5rem;
+  color: #2a302f; /* or any color you prefer */
+}
+
 /* Link style for socials */
 .contact-item a {
-  color: #4ecdc4;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -1045,34 +1064,46 @@
 
       <!-- Top row: Email + Phone -->
       <div class="contact-info contact-top contact-email">
-        <div class="contact-item ">
-          <div class="contact-icon ">📧</div>
-          <p>info.aialfa@gmail.com</p>
-        </div>
-        <div class="contact-item contact-mobile">
-          <div class="contact-icon ">📱</div>
-          <p>+94 76 6540 946</p>
-        </div>
-      </div>
+  <div class="contact-item">
+    <div class="contact-icon"><a href="mailto:info.aialfa@gmail.com">📧</a></div>
+    <p>
+      <a href="mailto:info.aialfa@gmail.com" style="color: inherit; text-decoration: none;">
+        info.aialfa@gmail.com
+      </a>
+    </p>
+  </div>
+  <div class="contact-item contact-mobile">
+    <div class="contact-icon"><a href="tel:+94766540946">📱</a></div>
+    <p>
+      <a href="tel:+94766540946" style="color: inherit; text-decoration: none;">
+        +94 76 6540 946
+      </a>
+    </p>
+  </div>
+</div>
+
 
       <!-- Bottom row: Social links -->
       <div class="contact-info contact-bottom">
-        <div class="contact-item">
-          <div class="contact-icon">💼</div>
-          <a href="https://www.linkedin.com/in/imesh-attanayaka0b0289213/"
-             target="_blank">LinkedIn</a>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">📸</div>
-          <a href="https://www.instagram.com/yourusername"
-             target="_blank">Instagram</a>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">📘</div>
-          <a href="https://www.facebook.com/yourusername"
-             target="_blank">Facebook</a>
-        </div>
-      </div>
+  <div class="contact-item">
+    <div class="contact-icon"><a href="https://www.linkedin.com/in/imesh-attanayaka0b0289213/"><i></i><i class="fab fa-linkedin"></i></a>
+    </div>
+    <a href="https://www.linkedin.com/in/imesh-attanayaka0b0289213/" target="_blank">LinkedIn</a>
+  </div>
+
+  <div class="contact-item">
+    <div class="contact-icon"><a href="https://www.instagram.com/yourusername"><i></i><i class="fab fa-instagram"></i></a>
+    </div>
+    <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
+  </div>
+
+  <div class="contact-item">
+    <div class="contact-icon"><a href="https://www.facebook.com/yourusername"><i></i><i class="fab fa-facebook"></i></a>
+    </div>
+    <a href="https://www.facebook.com/yourusername" target="_blank">Facebook</a>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
